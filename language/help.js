@@ -384,22 +384,13 @@ Kalian bisa mendukung saya agar bot ini tetap up to date dengan cara donasi
 Berapapun donasi kalian akan sangat berarti 👍
 Thanks!
 
--------「 *SEWA | JADI BOT | RUN BOT* 」-------
+-------「 *SEWA BOT* 」-------
 
 *_SEWA BOT_* 
-- _Sewa Bot 15k (1 minggu)_
-- _Sewa Bot 20k (1 bulan)_
-- _Sewa Bot 25k (Permanen)_
-
-*_JADI BOT_* 
-- _Jadi Bot 15k Tidak Owner (1 minggu)_
-- _Jadi Bot + Owner 20k (1 bulan)_
-- _Jadi Bot + Owner 25k (Permanen)_
-
-*_JASA RUN BOT_*
-- _Run Bot 15k (1 minggu)_
-- _Run Bot 20k (1 bulan)_
-- _Run Bot 25k (Permanen)_
+- _Sewa Bot 4k (1 Minggu)_
+- _Sewa Bot 6k (1 Bulan)_
+- _Sewa Bot 8k (1 Tahun)_
+- _Sewa Bot 10k (Permanen)_
  
 *_Minat? Langsung chat aja ya cuy 🐦_*
 
@@ -820,6 +811,9 @@ exports.ownermenu = (prefix) => {
 exports.thanksto = () => {
 	return`
 ┌── 「 *Thanks To* 」
+├ Allah SWT
+├ Nabi Muhammad
+├ Keluarga Ku
 ├ DikaArdnt
 ├ Zeeoneofc
 ├ FatihArridho
@@ -831,6 +825,7 @@ exports.thanksto = () => {
 ├ Deff
 ├ Katame
 ├ Yuda
+├ Deva24 (gua)
 └───────
 `
 }
