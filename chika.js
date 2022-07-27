@@ -232,6 +232,20 @@ module.exports = chika = async (chika, m, chatUpdate, store) => {
 		await chika.setStatus(`${chika.user.name} | Runtime : ${runtime(uptime)}`)
 		setting.status = new Date() * 1
 	    }
+
+        	case 'nsfw':
+        if (!isGroupAdmins && !isGroupOwner && !m.key.fromMe && !isCreator) return reply(lang.ownerOnly())
+        if (args[0] === "on") {
+		if (db.data.chats[m.chat].nsfw) return reply(lang.OnBef())
+        db.data.chats[m.chat].nsfw = true
+        reply(lang.OkOn('Nsfw'))
+        } else if (args[0] === "off") {
+        	if (!db.data.chats[m.chat].nsfw) return reply(lang.OffYaBef())
+        db.data.chats[m.chat].nsfw = false
+        reply(lang.OffBef('Nsfw'))
+        } else {
+        	alpha.sendButMessage(from, 'Mode Nfsw', `© ${ownername}`, [{buttonId: 'nsfw on', buttonText: {displayText: 'ON'}, type: 1},{buttonId: 'nsfw off', buttonText: {displayText: 'OFF'}, type: 1}], {quoted: fgif})
+			
 	}
 	    
 	  // Anti Link
